@@ -8,4 +8,12 @@
     <select id="findByName" parameterType="category" resultType="category">
             select * from   category where name=#{name};
     </select>
+
+    <update id="update" parameterType="category" >
+            update category set name=#{name};
+    </update>
+
+    <delete id="delete" parameterType="category" >
+        delete from category where name=#{name};
+    </delete>
 </mapper>
